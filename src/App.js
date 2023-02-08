@@ -21,7 +21,10 @@ function App() {
   return (
     <div className="App">
       {deviceData ?(
-        <h3>{deviceData.voltage}</h3>
+        <>
+        <p>{deviceData.apower}</p>
+        <p>{deviceData.voltage}</p>
+        </>
       ): (
         <h3>loading...</h3>
       )}

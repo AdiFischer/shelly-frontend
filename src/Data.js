@@ -16,6 +16,9 @@ export default function Device() {
   }, []);
   console.log("front", deviceData)
   return (
+    <>
+    <h3>{deviceData.apower}</h3>
     <h3>{deviceData.voltage}</h3>
+    </>
   )
 }
